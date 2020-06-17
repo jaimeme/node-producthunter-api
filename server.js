@@ -23,4 +23,6 @@ const Product = mongoose.model('Product');
 //rotas
 app.use('/api', require('./src/routes'))
 
-app.listen(3333);
+app.listen(3333, () => {
+    console.log('Back-end started! 🍾🍾🍾');
+});
